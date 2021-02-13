@@ -58,14 +58,20 @@ public class Barco {
 	public void llamarAbordaje(boolean abordaje) {
 	}
 	
+	public void navegar() {
+	}
+	
 	public boolean zarpar(boolean zarparYa) {
 		return zarparYa;
 	}
 	
+	
+	
 	@Override
 	protected void finalize() throws Throwable{ 
 		System.out.println("Garbage collector fue llamado");
-		System.out.println("El objeto destruido es: " + this); 
+		System.out.println("El objeto destruido es: " + this);
+		System.out.println();
 	} 
 	/**
 	 * @param args

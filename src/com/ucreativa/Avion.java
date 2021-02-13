@@ -7,7 +7,8 @@ package com.ucreativa;
  * @author Heinz Gamboa
  *
  */
-public class Bicicleta {
+public class Avion {
+	private int nRuedas;
 	public int getnRuedas() {
 		return nRuedas;
 	}
@@ -47,15 +48,17 @@ public class Bicicleta {
 	public void setMarca(String marca) {
 		this.marca = marca;
 	}
-	private int nRuedas;
+
 	private String ambiente; //Tierra, Agua, Aire
 	private int nPasajeros;
 	private int nMotores;
 	private String marca;
+	
+	
 	/**
 	 * 
 	 */
-	public Bicicleta(int numeroRuedas, String cualAmbiente, int numeroPasajeros, int numeroMotores, String marcaTransporte) {
+	public Avion(int numeroRuedas, String cualAmbiente, int numeroPasajeros, int numeroMotores, String marcaTransporte) {
 		// TODO Auto-generated constructor stub
 		nRuedas = numeroRuedas;
 		ambiente = cualAmbiente;
@@ -64,26 +67,24 @@ public class Bicicleta {
 		marca = marcaTransporte;
 	}
 
-	
-	public boolean frenarBicicleta(boolean frenar) {
-		return frenar;
+	public boolean subirTrenAtterizaje(boolean subirTren) {
+		return subirTren;
 	}
 	
-	public void cambiarLlanta() {
+	public void despegar() {
 		
 	}
 	
-	public int cambiarVelocidad(int velocidad) {
-		return velocidad;
+	public void aterrizar() {
+		
 	}
 	
 	@Override
 	protected void finalize() throws Throwable{ 
 		System.out.println("Garbage collector fue llamado");
-		System.out.println("El objeto destruido es: " + this);
+		System.out.println("El objeto destruido es: " + this); 
 		System.out.println();
 	} 
-
 	
 	/**
 	 * @param args

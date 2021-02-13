@@ -31,6 +31,10 @@ public class Main {
 		Barco myShip = new Barco("Oceano",1500,2,"Royal Caribean");
 		myShip = null;
 		System.gc();
+		
+		Avion myAirPlane = new Avion(6,"Aire",350,4,"Boeing");
+		myAirPlane = null;
+		Runtime.getRuntime().gc();
 	}
 }
 
